@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Article Display App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Page to display the data reterived from API calls">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="article.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="article.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            Article display app with vanilla JavaScript
+        </a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Click here to get movie details:
+                <button type="button" class="btn btn-primary" onclick="getMoviesList()">Get movies</button>
+                <div id="myMovieData" class="shadow p-3 mb-5 bg-white rounded" align="center"></div>
+            </div>
+            <div class="col">
+                Click here to get user details:
+                <button type="button" class="btn btn-success" onclick="getUsersList()">Get users</button>
+                <div id="myUserData" class="shadow p-3 mb-5 bg-white rounded" align="center"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
